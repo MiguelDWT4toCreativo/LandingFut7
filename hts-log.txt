@@ -1,0 +1,32 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 09 Sep 2024 13:19:52 at https://www.futbolsites.net/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.futbolsites.net/ -O1 "C:\Users\Cneo\Downloads\futbolmonteso" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:20:34	Error: 	"Not Found" (404) at link https://www.futbolsites.net/c (from https://www.futbolsites.net/)
+13:20:34	Error: 	"Not Found" (404) at link https://www.futbolsites.net/t (from https://www.futbolsites.net/)
+13:21:01	Error: 	"Not Found" (404) at link https://www.futbolsites.net/"https://static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa~mv2.jpg/v1/fill/w_980,h_551,enc_auto/file.jpeg" (from https://www.futbolsites.net/)
+13:21:03	Error: 	"Not Found" (404) at link https://www.futbolsites.net/media/emptystate.85a4add5.svg (from https://www.futbolsites.net/)
+13:21:25	Error: 	"Not Found" (404) at link https://www.futbolsites.net/feed.xml (from https://www.futbolsites.net/)
+13:21:25	Error: 	"Not Found" (404) at link https://www.futbolsites.net/${i.uri} (from https://www.futbolsites.net/)
+13:21:25	Error: 	"Not Found" (404) at link https://www.futbolsites.net/decodeURIComponent(e (from https://www.futbolsites.net/)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/es/c (from https://www.futbolsites.net/es/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/es/t (from https://www.futbolsites.net/es/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/es/robots.txt (from https://www.futbolsites.net/es/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/es/sitemap.xml (from https://www.futbolsites.net/es/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/es/feed.xml (from https://www.futbolsites.net/es/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/es/${i.uri} (from https://www.futbolsites.net/es/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/es/decodeURIComponent(e (from https://www.futbolsites.net/es/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/pt/c (from https://www.futbolsites.net/pt/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/pt/t (from https://www.futbolsites.net/pt/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/pt/robots.txt (from https://www.futbolsites.net/pt/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/pt/sitemap.xml (from https://www.futbolsites.net/pt/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/pt/feed.xml (from https://www.futbolsites.net/pt/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/pt/${i.uri} (from https://www.futbolsites.net/pt/team)
+13:21:53	Error: 	"Not Found" (404) at link https://www.futbolsites.net/pt/decodeURIComponent(e (from https://www.futbolsites.net/pt/team)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 1 seconds : 171 links scanned, 149 files written (23468979 bytes overall) [5152916 bytes received at 42586 bytes/sec], 22547989 bytes transferred using HTTP compression in 56 files, ratio 17%, 3.2 requests per connection
+(21 errors, 0 warnings, 0 messages)
