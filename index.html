@@ -10,6 +10,7 @@
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
 	<link rel="icon" sizes="192x192" href="./favicon.ico" />
 	<!-- <link rel="shortcut icon"
@@ -38285,55 +38286,9 @@
 																																	</div>
 																																	<div data-hook="player-overlay player-overlay-visible"
 																																		class="F2nCJ5 tOoXED">
-																																		<div
-																																			class="yUuGIv">
-																																			<div class="QvTl1N DvSZkM"
-																																				style="background-image:-webkit-image-set(url(_https_/static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa_mv2.jpg/v1/fill/w_980%2ch_551%2cenc_auto/file.html) 1x, url(&quot;https://static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa~mv2.jpg/v1/fill/w_1960,h_1103,enc_auto/file.jpeg&quot;) 2x, url(&quot;https://static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa~mv2.jpg/v1/fill/w_2940,h_1654,enc_auto/file.jpeg&quot;) 3x)">
-																																				<picture
-																																					class="o4ZdW9">
-																																					<source
-																																						media="(min-width: 0px)"
-																																						srcSet="https://static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa~mv2.jpg/v1/fill/w_980,h_551,enc_auto/file.jpeg 1x, https://static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa~mv2.jpg/v1/fill/w_1960,h_1103,enc_auto/file.jpeg 2x, https://static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa~mv2.jpg/v1/fill/w_2940,h_1654,enc_auto/file.jpeg 3x" />
-																																					<img alt="Futbol Sites | Reel 2020 | More than soccer"
-																																						class="IXKZdA"
-																																						src="https://static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa~mv2.jpg/v1/fill/w_980,h_551,enc_auto/file.jpeg 1x, https://static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa~mv2.jpg/v1/fill/w_1960,h_1103,enc_auto/file.jpeg 2x, https://static.wixstatic.com/media/a323de_50c87e7ad3154c7e829d5489aa9b01fa~mv2.jpg/v1/fill/w_2940,h_1654,enc_auto/file.jpeg 3x" />
-																																				</picture>
-																																				<div
-																																					class="ROhna4">
-																																				</div>
-																																			</div>
-																																		</div>
-																																		<div class="bl9PqF"
-																																			style="background-color:rgba(0,0,0,0.35)">
-																																			<div
-																																				class="ekZcnh">
-																																				<div
-																																					class="BPt7UM">
-																																					<div class="AX4rmo NQ_YwU"
-																																						data-hook="overlay-play-button"
-																																						aria-hidden="false"
-																																						tabindex="0">
-																																						<svg width="56"
-																																							height="56"
-																																							viewBox="0 0 56 56"
-																																							xmlns="http://www.w3.org/2000/svg"
-																																							class="j2rwll">
-																																							<g fill="#FFF"
-																																								fill-rule="evenodd">
-																																								<path
-																																									d="M28 53c13.807 0 25-11.193 25-25S41.807 3 28 3 3 14.193 3 28s11.193 25 25 25Zm0 3C12.536 56 0 43.464 0 28S12.536 0 28 0s28 12.536 28 28-12.536 28-28 28Z">
-																																								</path>
-																																								<path
-																																									d="M37.232 27.91 22 36.82V19z">
-																																								</path>
-																																							</g>
-																																						</svg><span
-																																							class="Cg2xdo">Play
-																																							Video</span>
-																																					</div>
-																																				</div>
-																																			</div>
-																																		</div>
+																																			<video width="auto" height="auto" controls autoplay muted loop>
+        																																					<source src="video1.mov" type="video/mp4">
+    																																		</video>
 																																	</div>
 																																	<nav>
 																																	</nav>
@@ -38625,6 +38580,15 @@
 							</div>
 						</div>
 					</main>
+
+					<style>
+						/* Estilos para que el mapa ocupe un buen espacio en la página */
+						#map {
+							height: 500px;
+							width: 100%;
+						}
+					</style>
+
 					<div id="SITE_FOOTER" class="xU8fqS SITE_FOOTER wixui-footer" tabindex="-1">
 						<div class="_C0cVf">
 							<div class="_4XcTfy" data-testid="screenWidthContainerBg"></div>
@@ -38634,21 +38598,35 @@
 								<div class="gUbusX" data-testid="screenWidthContainerBgCenter"></div>
 							</div>
 							<div class="CJF7A2">
-								<div data-mesh-id="SITE_FOOTERinlineContent" data-testid="inline-content" class="">
-									<div data-mesh-id="SITE_FOOTERinlineContent-gridContainer"
-										data-testid="mesh-container-content">
+								<div data-mesh-id="SITE_FOOTERinlineContent" data-testid="inline-content" class=""><br><br>
+									<h5 class="font_5 wixui-rich-text__text" style="font-size:22px; line-height:normal;">
+												<span style="color:#333333;" class="wixui-rich-text__text">
+													<span style="font-size:22px;" class="wixui-rich-text__text">
+														<span style="letter-spacing:normal;" class="wixui-rich-text__text">NuestraCancha</span>
+													</span>
+												</span>
+									</h5><br><br>
+									<div id="map"></div>
+									<div data-mesh-id="SITE_FOOTERinlineContent-gridContainer"	data-testid="mesh-container-content">
+										
+										<!-- Script de Leaflet.js -->
+										<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-										<div id="comp-kll217gq"
-											class="HcOXKn c9GqVL QxJLC3 lq2cno comp-kll217gq wixui-rich-text"
-											data-testid="richTextElement">
-											<h5 class="font_5 wixui-rich-text__text"
-												style="font-size:22px; line-height:normal;"><span style="color:#333333;"
-													class="wixui-rich-text__text"><span style="font-size:22px;"
-														class="wixui-rich-text__text"><span
-															style="letter-spacing:normal;"
-															class="wixui-rich-text__text">Nuestra
-															Cancha</span></span></span></h5>
-										</div>
+										<!-- Script para inicializar el mapa -->
+										<script>
+											// Inicializar el mapa y establecer la vista
+											const map = L.map('map').setView([20.0923696, -98.7654178,585], 13);
+
+											// Cargar y mostrar el mapa de OpenStreetMap
+											L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+												
+											}).addTo(map);
+
+											// Añadir un marcador
+											L.marker([20.0933564, -98.76781]).addTo(map)
+												.bindPopup('Futbol 7 Montessori')
+												.openPopup();
+										</script>
 
 										<div id="comp-jt08qrtb" class="comp-jt08qrtb SPY_vo">
 											<div data-mesh-id="comp-jt08qrtbinlineContent" data-testid="inline-content"
@@ -38660,23 +38638,24 @@
 															href="terminos-y-condiciones.html" target="_self"
 															class="uDW_Qe wixui-button PlZyDq"
 															aria-disabled="false"><span
-																class="l7_2fn wixui-button__label">Políticas de Privacidad</span></a></div>
+																class="l7_2fn wixui-button__label">Políticas de
+																Privacidad</span></a></div>
 													<div class="comp-jt08lr8i FubTgk" id="comp-jt08lr8i"
 														aria-disabled="false"><a data-testid="linkElement"
 															href="privacy-policies.html" target="_self"
 															class="uDW_Qe wixui-button PlZyDq"
 															aria-disabled="false"><span
-																class="l7_2fn wixui-button__label">Reglamento</span></a></div>
+																class="l7_2fn wixui-button__label">Reglamento</span></a>
+													</div>
 												</div>
 											</div>
 										</div>
-										
+
 										<div id="comp-jsnf69rs" class="comp-jsnf69rs aVng1S wixui-horizontal-line">
 										</div>
 										<div id="comp-kobzeou6" class="MazNVa comp-kobzeou6 wixui-image rYiAuL"><img
-														src="./montessory.png"
-														alt="Fut7 Montessori.png"
-														srcSet="./montessory.png" /></div>
+												src="./montessory.png" alt="Fut7 Montessori.png"
+												srcSet="./montessory.png" /></div>
 										<div id="comp-jsgf1hae"
 											class="HcOXKn c9GqVL QxJLC3 lq2cno comp-jsgf1hae wixui-rich-text"
 											data-testid="richTextElement">
@@ -38687,15 +38666,15 @@
 															style="letter-spacing:normal;"
 															class="wixui-rich-text__text"><span
 																style="font-weight:normal;"
-																class="wixui-rich-text__text">Futbol 7 Montessori. All rights
+																class="wixui-rich-text__text">Futbol 7 Montessori. All
+																rights
 																reserved.​</span></span></span></span></p>
 										</div>
 										<div id="comp-iocmhpph" class="comp-iocmhpph WzbAF8">
 											<ul class="mpGTIt" aria-label="Social Bar">
 												<li id="dataItem-l1xvj1lk-comp-iocmhpph" class="O6KwRn"><a
-														data-testid="linkElement"
-														href="https://www.instagram.com/" target="_blank"
-														rel="noreferrer noopener" class="oRtuWN"
+														data-testid="linkElement" href="https://www.instagram.com/"
+														target="_blank" rel="noreferrer noopener" class="oRtuWN"
 														aria-label="Negro del icono de Instagram"><wow-image
 															id="img_0_comp-iocmhpph" class="HlRz5e YaS0jR"
 															data-image-info="{&quot;containerId&quot;:&quot;dataItem-l1xvj1lk-comp-iocmhpph&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:200,&quot;height&quot;:200,&quot;uri&quot;:&quot;01c3aff52f2a4dffa526d7a9843d46ea.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.33,&quot;amount&quot;:1,&quot;threshold&quot;:0}}}}"
@@ -38705,9 +38684,8 @@
 																alt="Negro del icono de Instagram" /></wow-image></a>
 												</li>
 												<li id="dataItem-iocnh4nq-comp-iocmhpph" class="O6KwRn"><a
-														data-testid="linkElement"
-														href="https://www.facebook.com/" target="_blank"
-														rel="noreferrer noopener" class="oRtuWN"
+														data-testid="linkElement" href="https://www.facebook.com/"
+														target="_blank" rel="noreferrer noopener" class="oRtuWN"
 														aria-label="Black Facebook Icon"><wow-image
 															id="img_1_comp-iocmhpph" class="HlRz5e YaS0jR"
 															data-image-info="{&quot;containerId&quot;:&quot;dataItem-iocnh4nq-comp-iocmhpph&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:200,&quot;height&quot;:200,&quot;uri&quot;:&quot;0fdef751204647a3bbd7eaa2827ed4f9.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.33,&quot;amount&quot;:1,&quot;threshold&quot;:0}}}}"
@@ -38727,7 +38705,7 @@
 																alt="X" /></wow-image></a></li>
 											</ul>
 										</div>
-										
+
 										<div data-mesh-id="SITE_FOOTERinlineContent-wedge-9"></div>
 									</div>
 								</div>
@@ -38762,8 +38740,6 @@
 			window.fedops.phaseStarted('missing_polyfills')
 		}
 	</script>
-
-
 
 	<!-- initCustomElements # 1-->
 	<script
